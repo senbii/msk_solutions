@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a1 = n / 1000;      // 1234 / 1000 -> 1
+        int a2 = n / 100 % 10;  // 1234 / 100 = 12 % 10 -> 2
+        int a3 = n / 10 % 10;   // 1234 / 10 = 123 % 10 -> 3
+        int a4 = n % 10;        // 1234 % 10 -> 4
+
+        int A = a1 * 10 + a2; // 1 * 10 + 2
+        int B = a4 * 10 + a3; // 4 * 10 + 3
+        System.out.println(A - B + 1); // если равные, то 0 + 1, если нет, то любое другое число
+
+    }
+}
