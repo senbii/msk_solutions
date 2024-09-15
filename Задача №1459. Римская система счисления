@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        int b = a % 10;
+        int c = a / 10;
+        if (c == 1) System.out.print("X");
+        else if (c == 2) System.out.print("XX");
+        else if (c == 3) System.out.print("XXX");
+        else if (c == 4) System.out.print("XL");
+        else if (c == 5) System.out.print("L");
+        else if (c == 6) System.out.print("LX");
+        else if (c == 7) System.out.print("LXX");
+        else if (c == 8) System.out.print("LXXX");
+        else if (c == 9) System.out.print("XC");
+        else if (c == 10) System.out.print("C");
+        if (b == 1) System.out.print("I");
+        else if (b == 2) System.out.print("II");
+        else if (b == 3) System.out.print("III");
+        else if (b == 4) System.out.print("IV");
+        else if (b == 5) System.out.print("V");
+        else if (b == 6) System.out.print("VI");
+        else if (b == 7) System.out.print("VII");
+        else if (b == 8) System.out.print("VIII");
+        else if (b == 9) System.out.print("IX");
+        else if (b == 10) System.out.print("X");
+    }
+}
