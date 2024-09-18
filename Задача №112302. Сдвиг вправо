@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int r = sc.nextInt(), ir = 0;
+        int[] resarr = new int[n];
+        for (int i = r; i < n; i++, ir++) {
+            resarr[i] = arr[ir];
+        }for(int i = 0; i < r; i++, ir++) {
+            resarr[i] = arr[ir];
+        }
+
+
+
+        for(int i = 0; i < n; i++)
+            System.out.print(resarr[i] + " ");
+
+    }
+}
